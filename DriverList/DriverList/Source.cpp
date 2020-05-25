@@ -4,8 +4,20 @@
 
 #define ARRAY_SIZE 1024
 
-int main()
+void usageMsg() {
+
+	std::cout << "\t__ DriverList ___\n\n";
+
+	std::cout << "A mini Windows tool to view loaded modules,\nand their associated kernel base address\n\n";
+
+}
+
+int main(int argc, char* argv[])
 {
+
+	usageMsg();
+	system("pause");
+
 	std::cout << "\n\n[---------------------------------------- loaded drivers----------------------------------------]\n\n";
 
 	LPVOID lpImageBase[ARRAY_SIZE];
@@ -23,6 +35,7 @@ int main()
 		std::cout << "There are " << cd << " drivers loaded." << std::endl;
 
 		TCHAR szDriver[ARRAY_SIZE];
+
 		for (i = 0; i < cd; i++) {
 
 			if (!GetDeviceDriverBaseNameA(lpImageBase[i], szDriver, sizeof(szDriver))) 
@@ -31,6 +44,7 @@ int main()
 			}
 			else 
 			{
+
 				LPVOID drivers[1024];
 				DWORD cbNeeded;
 
@@ -45,4 +59,5 @@ int main()
 		}
 		system("pause");
 	}
+
 }
