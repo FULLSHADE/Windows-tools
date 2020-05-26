@@ -1,4 +1,4 @@
-# Windows-tools
+# WindowsToolkit
 
 A suite of Windows system utility tools to provide various types of information and functionality across a Windows operating system
 
@@ -6,13 +6,13 @@ A suite of Windows system utility tools to provide various types of information 
 
 v1.0 (May 2020)
 
-ProcList is a small utility to list information about all the running processes across your system,
+ProcList is a small utility to list information about all the running processes across your system.
 
 ### DriverList
 
 v1.0 (May 2020)
 
-DriverList is a small utility to list various information about all the loaded drivers across your system
+DriverList is a small utility to list various information about all the loaded drivers across your system.
 
 ### SysInfo
 
