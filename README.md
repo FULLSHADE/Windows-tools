@@ -19,3 +19,9 @@ DriverList is a small utility to list various information about all the loaded d
 v1.0 (May 2020)
 
 SysInfo is a small utility for enumerating various types of information about your Windows system, including hardware, CPU info, users, versions, etc.
+
+### ServMan
+
+v1.0 (May 2020)
+
+ServMan is a system utility tool for loading, starting, stopping, and restarting device drivers / services on a Windows system, this is a driver / service management tool
